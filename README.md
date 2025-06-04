@@ -1,90 +1,106 @@
-Store Rating System
+# Store Rating System
 
-Overview
+## Overview
 
-The Store Rating System is a web application that allows users to rate and review stores. It includes an admin panel for managing stores, users, and ratings.
+The **Store Rating System** is a web application that allows users to rate and review stores. It includes an admin panel for managing stores, users, and ratings.
 
-Screenshots
+### Features
+- User authentication (Login/Signup)
+- Add or modify ratings of stores
+- Admin panel to manage users, stores, and ratings
+- Store owners can view ratings for their stores
+- Responsive UI built with React
 
+---
 
-<img src="screenshots/pic-1.png" width="800"/>
-<img src="screenshots/pic-2.png" width="800"/>
-<img src="screenshots/pic-3.png" width="800"/>
-<img src="screenshots/pic-4.png" width="800"/>
-<img src="screenshots/pic-5.png" width="800"/>
-<img src="screenshots/pic-6.png" width="800"/>
-<img src="screenshots/pic-7.png" width="800"/>
-<img src="screenshots/pic-8.png" width="800"/>
+## Screenshots
 
+![Screenshot 1](screenshots/pic-1.png)
+![Screenshot 2](screenshots/pic-2.png)
+![Screenshot 3](screenshots/pic-3.png)
+![Screenshot 4](screenshots/pic-4.png)
+![Screenshot 5](screenshots/pic-5.png)
+![Screenshot 6](screenshots/pic-6.png)
+![Screenshot 7](screenshots/pic-7.png)
+![Screenshot 8](screenshots/pic-8.png)
 
+---
 
+## Installation and Setup
 
-
-
-User authentication (Login/Signup)
-
-add /modify rating of stores
-
-Admin panel for managing users, stores, and ratings
-
-Store owners can view their store's ratings
-
-Responsive UI built with React
-
-Installation and Setup
-
-1. Clone the Repository
-
+### 1. Clone the Repository
+```bash
 git clone https://github.com/Pruthvi070/StoreRatingSystem.git
 cd StoreRatingSystem
+```
 
-2. Backend Setup (Node.js + Express + MySQL)
+### 2. Backend Setup (Node.js + Express + MySQL)
 
+```bash
 cd backend
 npm install
+```
 
+#### Configure Environment Variables
 
-Configure Environment Variables
+Create a `.env` file inside the `backend` folder with the following content:
 
-Create a .env file inside the backend folder and add:
-
-PORT=.....
+```
+PORT=5000
 DB_HOST=localhost
 DB_USER=root
-DB_PASS=.......*
+DB_PASS=your_database_password
 DB_NAME=storeratingdb
-DB_PORT=.....
-JWT_SECRET=.......
-admin login credintials = admin@admin.com
-                          pass-admin123
+DB_PORT=3306
+JWT_SECRET=your_jwt_secret_key
+```
 
+> **Note:** Replace `your_database_password` and `your_jwt_secret_key` with your actual credentials.
 
-Start the Backend Server
+#### Initialize Database and Admin User
 
-npm run pruthviraj --> Run to create tables initally and stop the server then run below command
-node setupAdmin --> to insert the admin credentials initally
-then run again to run the backend
-npm run pavan 
+Run these commands sequentially:
 
-3. Frontend Setup (React)
+```bash
+npm run pruthviraj
+# Stop the server once tables are created
+node setupAdmin.js
+npm run pruthviraj
+```
 
+### 3. Frontend Setup (React)
+
+```bash
 cd ../frontend
 npm install
-
-Start the Frontend Server
-
 npm start
+```
 
-4. Access the Application
+---
 
-Backend API runs on: http://localhost:5000
+## Access the Application
 
-Frontend runs on: http://localhost:3000
+- Backend API: [http://localhost:5000](http://localhost:5000)
+- Frontend: [http://localhost:3000](http://localhost:3000)
 
-Technologies Used
+---
 
-Frontend: React, Redux, CSS
+## Initial Admin Login Credentials
 
-Backend: Node.js, Express, MySQL
+- **Email:** admin@admin.com
+- **Password:** admin123
 
-Authentication: JWT
+---
+
+## Technologies Used
+
+| Layer          | Technologies              |
+|----------------|--------------------------|
+| Frontend       | React, Redux, CSS        |
+| Backend        | Node.js, Express, MySQL  |
+| Authentication | JWT (JSON Web Tokens)    |
+
+---
+
+If you have any questions or issues, feel free to contact me.
+
