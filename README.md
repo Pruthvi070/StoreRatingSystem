@@ -6,15 +6,17 @@ The Store Rating System is a web application that allows users to rate and revie
 
 Screenshots
 
-Admin Pages:
-![Admin DashBoard1](screenshots/admindb.jpg)
-![Admin DashBoard2](screenshots/photo_2025-03-17_13-56-30.jpg)
-![Admin DashBoard3](screenshots/photo_2025-03-17_13-56-33.jpg)
-Store Owner DashBoard:
-![StoreOwner DashBoard3](screenshots/photo_2025-03-17_13-56-35.jpg)
-Normal User Home:
-![User1](screenshots/photo_2025-03-17_13-56-37.jpg)
-![User2](screenshots/photo_2025-03-17_13-56-38.jpg)
+
+<img src="screenshots/pic-1.png" width="800"/>
+<img src="screenshots/pic-2.png" width="800"/>
+<img src="screenshots/pic-3.png" width="800"/>
+<img src="screenshots/pic-4.png" width="800"/>
+<img src="screenshots/pic-5.png" width="800"/>
+<img src="screenshots/pic-6.png" width="800"/>
+<img src="screenshots/pic-7.png" width="800"/>
+<img src="screenshots/pic-8.png" width="800"/>
+
+
 
 
 
