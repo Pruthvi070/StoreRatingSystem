@@ -35,7 +35,7 @@ Installation and Setup
 
 1. Clone the Repository
 
-git clone https://github.com/VeluruPavankumar/StoreRatingSystem.git
+git clone https://github.com/Pruthvi070/StoreRatingSystem.git
 cd StoreRatingSystem
 
 2. Backend Setup (Node.js + Express + MySQL)
@@ -55,18 +55,20 @@ DB_PASS=.......*
 DB_NAME=storeratingdb
 DB_PORT=.....
 JWT_SECRET=.......
+admin login credintials = admin@admin.com
+                          pass-admin123
 
 
 Start the Backend Server
 
-npm run pavan --> Run to create tables initally and stop the server then run below command
-node hashAdmin.js --> to insert the admin credentials initally
+npm run pruthviraj --> Run to create tables initally and stop the server then run below command
+node setupAdmin --> to insert the admin credentials initally
 then run again to run the backend
 npm run pavan 
 
 3. Frontend Setup (React)
 
-cd ../reviewfeapp
+cd ../frontend
 npm install
 
 Start the Frontend Server
