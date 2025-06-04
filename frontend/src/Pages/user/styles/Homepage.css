@@ -1,0 +1,119 @@
+/* HomePage Styles */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .search-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .search-container input {
+    width: 400px;
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin: auto;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.search-container button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6b35;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: auto;
+  }
+  
+  .search-container button:hover {
+    background-color: #ff5722;
+    transform: translateY(-2px);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+  }
+  
+  th {
+    background-color: #ff6b35;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+  }
+  
+  td {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  
+  tr:hover {
+    background-color: #f7fafc;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .view-button {
+    padding: 0.5rem 1rem;
+    background-color: #ff6b35;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #ff5722;
+    transform: translateY(-1px);
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      margin: 1rem;
+    }
+    
+    .search-container {
+      flex-direction: column;
+    }
+    
+    table {
+      font-size: 0.875rem;
+    }
+    
+    th, td {
+      padding: 0.75rem;
+    }
+  }
